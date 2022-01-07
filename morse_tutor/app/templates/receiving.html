@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class='receiveWrapper' id='receiveWrapper'>
+    <div class='receiveContainer' id='receiveContainer'>
+        <h3>Type here:</h3>
+        <textarea id="story" name="story" rows="10" cols="33" autofocus></textarea>
+        <div style='padding-top: 10px;'>
+            <button class="checkBtn" id="checkBtn">Check</button>
+        </div>
+    </div>
+    <div class='receivingResults' id='receivingResults'>
+        <div class='exitBtn'>
+            <a href="{% url 'training' %}">
+                <span>
+                    <i class="fas fa-times-circle"></i>
+                </span>
+            </a>
+        </div>
+        <div class='GoAgainDiv' id='GoAgainDiv'>
+            <a href="{% url 'receiving' %}">
+            <button class="GoAgain" id="GoAgain">Try again</button>
+            </a>
+        </div>
+        <div class="receivingResults1" id='receivingResults1'>
+            <h2>Your input:</h2>
+            <p id='P_receivingResults1' class='info_P'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa esse explicabo, atque tempora rem iusto eos animi quidem alias distinctio itaque, odio dolor ratione ut quia. Deleniti accusantium iste voluptas.</p>
+        </div>
+
+        <div class="receivingResults2" id='receivingResults2' >
+            <h2>Answer:</h2>
+            <p id='P_receivingResults2' class='info_P'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dignissimos qui explicabo earum amet repellat adipisci tempora ullam similique aliquid itaque illum placeat molestias quasi laudantium, exercitationem voluptatum, sed aperiam?</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="receiveSetting" id='receiveSetting'>
+    <h1>Settings:</h1>
+    <p>Text Length</p>
+    <div class="range-input">
+        <input type="range" min="10" max="400" value="40" step="10" id='textLength'>
+        <div class="value" id='textLengthValue'>
+            <div>6</div>
+        </div>
+    </div>
+    <p>Group Size</p>
+    <div class="range-input">
+        <input type="range" min="1" max="10" value="4" step="1" id='groupSize'>
+        <div class="value" id='groupSizeValue'>
+            <div>5</div>
+        </div>
+    </div>
+    <div class='checkOptions'>
+        <div>
+            <input type="checkbox" id='disableV'>
+            Disable "V V V"
+        </div>
+        <div>
+            <input type="checkbox" id='excludeDigits'>
+            Exclude digits
+        </div>
+        <div style='margin-top: 20px;font-size: 12px; color: grey;'>
+            You can change speed in global settings
+        </div>
+    </div>
+
+
+</div>
+<div class='pressEnter' id='pressEnter'>
+    <h1 id='blink1'>Press 'Enter' to begin</h1>
+</div>
+<script src="{% static 'js/receiving.js' %}"></script>
+{% endblock %}

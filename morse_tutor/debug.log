@@ -1,0 +1,870 @@
+
+Error: '/home/denis/morse_tutor/config/gunicorn.conf.py' doesn't exist
+
+Error: '/home/denis/morse_tutor/config/gunicorn.conf.py' doesn't exist
+
+Error: '/home/denis/morse_tutor/config/gunicorn.conf.py' doesn't exist
+
+Error: '/home/denis/morse_tutor/config/gunicorn.conf.py' doesn't exist
+[2022-01-05 00:17:04 +0300] [15189] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:17:04 +0300] [15189] [INFO] Listening at: http://127.0.0.1:8000 (15189)
+[2022-01-05 00:17:04 +0300] [15189] [INFO] Using worker: sync
+[2022-01-05 00:17:04 +0300] [15192] [INFO] Booting worker with pid: 15192
+[2022-01-05 00:17:04 +0300] [15192] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:17:04 +0300] [15192] [INFO] Worker exiting (pid: 15192)
+[2022-01-05 00:17:04 +0300] [15189] [INFO] Shutting down: Master
+[2022-01-05 00:17:04 +0300] [15189] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:17:05 +0300] [15193] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:17:05 +0300] [15193] [INFO] Listening at: http://127.0.0.1:8000 (15193)
+[2022-01-05 00:17:05 +0300] [15193] [INFO] Using worker: sync
+[2022-01-05 00:17:05 +0300] [15196] [INFO] Booting worker with pid: 15196
+[2022-01-05 00:17:05 +0300] [15196] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:17:05 +0300] [15196] [INFO] Worker exiting (pid: 15196)
+[2022-01-05 00:17:05 +0300] [15193] [INFO] Shutting down: Master
+[2022-01-05 00:17:05 +0300] [15193] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:17:07 +0300] [15197] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:17:07 +0300] [15197] [INFO] Listening at: http://127.0.0.1:8000 (15197)
+[2022-01-05 00:17:07 +0300] [15197] [INFO] Using worker: sync
+[2022-01-05 00:17:07 +0300] [15200] [INFO] Booting worker with pid: 15200
+[2022-01-05 00:17:07 +0300] [15200] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:17:07 +0300] [15200] [INFO] Worker exiting (pid: 15200)
+[2022-01-05 00:17:07 +0300] [15197] [INFO] Shutting down: Master
+[2022-01-05 00:17:07 +0300] [15197] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:17:11 +0300] [15201] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:17:11 +0300] [15201] [INFO] Listening at: http://127.0.0.1:8000 (15201)
+[2022-01-05 00:17:11 +0300] [15201] [INFO] Using worker: sync
+[2022-01-05 00:17:11 +0300] [15204] [INFO] Booting worker with pid: 15204
+[2022-01-05 00:17:11 +0300] [15204] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:17:11 +0300] [15204] [INFO] Worker exiting (pid: 15204)
+[2022-01-05 00:17:11 +0300] [15201] [INFO] Shutting down: Master
+[2022-01-05 00:17:11 +0300] [15201] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:19:55 +0300] [15231] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:19:55 +0300] [15231] [INFO] Listening at: http://127.0.0.1:8000 (15231)
+[2022-01-05 00:19:55 +0300] [15231] [INFO] Using worker: sync
+[2022-01-05 00:19:55 +0300] [15234] [INFO] Booting worker with pid: 15234
+[2022-01-05 00:19:55 +0300] [15234] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:19:55 +0300] [15234] [INFO] Worker exiting (pid: 15234)
+[2022-01-05 00:19:55 +0300] [15231] [INFO] Shutting down: Master
+[2022-01-05 00:19:55 +0300] [15231] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:19:56 +0300] [15235] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:19:56 +0300] [15235] [INFO] Listening at: http://127.0.0.1:8000 (15235)
+[2022-01-05 00:19:56 +0300] [15235] [INFO] Using worker: sync
+[2022-01-05 00:19:56 +0300] [15238] [INFO] Booting worker with pid: 15238
+[2022-01-05 00:19:56 +0300] [15238] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:19:56 +0300] [15238] [INFO] Worker exiting (pid: 15238)
+[2022-01-05 00:19:56 +0300] [15235] [INFO] Shutting down: Master
+[2022-01-05 00:19:56 +0300] [15235] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:19:58 +0300] [15241] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:19:58 +0300] [15241] [INFO] Listening at: http://127.0.0.1:8000 (15241)
+[2022-01-05 00:19:58 +0300] [15241] [INFO] Using worker: sync
+[2022-01-05 00:19:58 +0300] [15244] [INFO] Booting worker with pid: 15244
+[2022-01-05 00:19:58 +0300] [15244] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:19:58 +0300] [15244] [INFO] Worker exiting (pid: 15244)
+[2022-01-05 00:19:58 +0300] [15241] [INFO] Shutting down: Master
+[2022-01-05 00:19:58 +0300] [15241] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:20:02 +0300] [15245] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:20:02 +0300] [15245] [INFO] Listening at: http://127.0.0.1:8000 (15245)
+[2022-01-05 00:20:02 +0300] [15245] [INFO] Using worker: sync
+[2022-01-05 00:20:02 +0300] [15248] [INFO] Booting worker with pid: 15248
+[2022-01-05 00:20:02 +0300] [15248] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:20:02 +0300] [15248] [INFO] Worker exiting (pid: 15248)
+[2022-01-05 00:20:02 +0300] [15245] [INFO] Shutting down: Master
+[2022-01-05 00:20:02 +0300] [15245] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:23:32 +0300] [15295] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:23:32 +0300] [15295] [INFO] Listening at: http://127.0.0.1:8000 (15295)
+[2022-01-05 00:23:32 +0300] [15295] [INFO] Using worker: sync
+[2022-01-05 00:23:32 +0300] [15298] [INFO] Booting worker with pid: 15298
+[2022-01-05 00:23:32 +0300] [15298] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:23:32 +0300] [15298] [INFO] Worker exiting (pid: 15298)
+[2022-01-05 00:23:32 +0300] [15295] [INFO] Shutting down: Master
+[2022-01-05 00:23:32 +0300] [15295] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:23:33 +0300] [15299] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:23:33 +0300] [15299] [INFO] Listening at: http://127.0.0.1:8000 (15299)
+[2022-01-05 00:23:33 +0300] [15299] [INFO] Using worker: sync
+[2022-01-05 00:23:33 +0300] [15302] [INFO] Booting worker with pid: 15302
+[2022-01-05 00:23:33 +0300] [15302] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:23:33 +0300] [15302] [INFO] Worker exiting (pid: 15302)
+[2022-01-05 00:23:34 +0300] [15303] [INFO] Booting worker with pid: 15303
+[2022-01-05 00:23:34 +0300] [15303] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:23:34 +0300] [15303] [INFO] Worker exiting (pid: 15303)
+[2022-01-05 00:23:34 +0300] [15299] [WARNING] Worker with pid 15303 was terminated due to signal 15
+[2022-01-05 00:23:34 +0300] [15299] [INFO] Shutting down: Master
+[2022-01-05 00:23:34 +0300] [15299] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:23:36 +0300] [15304] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:23:36 +0300] [15304] [INFO] Listening at: http://127.0.0.1:8000 (15304)
+[2022-01-05 00:23:36 +0300] [15304] [INFO] Using worker: sync
+[2022-01-05 00:23:36 +0300] [15307] [INFO] Booting worker with pid: 15307
+[2022-01-05 00:23:36 +0300] [15307] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:23:36 +0300] [15307] [INFO] Worker exiting (pid: 15307)
+[2022-01-05 00:23:36 +0300] [15304] [INFO] Shutting down: Master
+[2022-01-05 00:23:36 +0300] [15304] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:23:39 +0300] [15308] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:23:39 +0300] [15308] [INFO] Listening at: http://127.0.0.1:8000 (15308)
+[2022-01-05 00:23:39 +0300] [15308] [INFO] Using worker: sync
+[2022-01-05 00:23:39 +0300] [15311] [INFO] Booting worker with pid: 15311
+[2022-01-05 00:23:39 +0300] [15311] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:23:39 +0300] [15311] [INFO] Worker exiting (pid: 15311)
+[2022-01-05 00:23:39 +0300] [15308] [INFO] Shutting down: Master
+[2022-01-05 00:23:39 +0300] [15308] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:16 +0300] [15324] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:16 +0300] [15324] [INFO] Listening at: http://127.0.0.1:8000 (15324)
+[2022-01-05 00:24:16 +0300] [15324] [INFO] Using worker: sync
+[2022-01-05 00:24:16 +0300] [15327] [INFO] Booting worker with pid: 15327
+[2022-01-05 00:24:16 +0300] [15327] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:16 +0300] [15327] [INFO] Worker exiting (pid: 15327)
+[2022-01-05 00:24:16 +0300] [15324] [INFO] Shutting down: Master
+[2022-01-05 00:24:16 +0300] [15324] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:17 +0300] [15328] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:17 +0300] [15328] [INFO] Listening at: http://127.0.0.1:8000 (15328)
+[2022-01-05 00:24:17 +0300] [15328] [INFO] Using worker: sync
+[2022-01-05 00:24:17 +0300] [15331] [INFO] Booting worker with pid: 15331
+[2022-01-05 00:24:17 +0300] [15331] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:17 +0300] [15331] [INFO] Worker exiting (pid: 15331)
+[2022-01-05 00:24:17 +0300] [15328] [INFO] Shutting down: Master
+[2022-01-05 00:24:17 +0300] [15328] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:19 +0300] [15333] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:19 +0300] [15333] [INFO] Listening at: http://127.0.0.1:8000 (15333)
+[2022-01-05 00:24:19 +0300] [15333] [INFO] Using worker: sync
+[2022-01-05 00:24:19 +0300] [15336] [INFO] Booting worker with pid: 15336
+[2022-01-05 00:24:19 +0300] [15336] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:19 +0300] [15336] [INFO] Worker exiting (pid: 15336)
+[2022-01-05 00:24:19 +0300] [15333] [INFO] Shutting down: Master
+[2022-01-05 00:24:19 +0300] [15333] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:22 +0300] [15338] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:22 +0300] [15338] [INFO] Listening at: http://127.0.0.1:8000 (15338)
+[2022-01-05 00:24:22 +0300] [15338] [INFO] Using worker: sync
+[2022-01-05 00:24:22 +0300] [15341] [INFO] Booting worker with pid: 15341
+[2022-01-05 00:24:22 +0300] [15341] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:22 +0300] [15341] [INFO] Worker exiting (pid: 15341)
+[2022-01-05 00:24:22 +0300] [15338] [INFO] Shutting down: Master
+[2022-01-05 00:24:22 +0300] [15338] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:24 +0300] [15350] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:24 +0300] [15350] [INFO] Listening at: http://127.0.0.1:8000 (15350)
+[2022-01-05 00:24:24 +0300] [15350] [INFO] Using worker: sync
+[2022-01-05 00:24:24 +0300] [15353] [INFO] Booting worker with pid: 15353
+[2022-01-05 00:24:24 +0300] [15353] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:24 +0300] [15353] [INFO] Worker exiting (pid: 15353)
+[2022-01-05 00:24:24 +0300] [15354] [INFO] Booting worker with pid: 15354
+[2022-01-05 00:24:24 +0300] [15354] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:24 +0300] [15354] [INFO] Worker exiting (pid: 15354)
+[2022-01-05 00:24:24 +0300] [15350] [WARNING] Worker with pid 15354 was terminated due to signal 15
+[2022-01-05 00:24:24 +0300] [15350] [INFO] Shutting down: Master
+[2022-01-05 00:24:24 +0300] [15350] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:26 +0300] [15355] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:26 +0300] [15355] [INFO] Listening at: http://127.0.0.1:8000 (15355)
+[2022-01-05 00:24:26 +0300] [15355] [INFO] Using worker: sync
+[2022-01-05 00:24:26 +0300] [15358] [INFO] Booting worker with pid: 15358
+[2022-01-05 00:24:26 +0300] [15358] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:26 +0300] [15358] [INFO] Worker exiting (pid: 15358)
+[2022-01-05 00:24:26 +0300] [15355] [INFO] Shutting down: Master
+[2022-01-05 00:24:26 +0300] [15355] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:28 +0300] [15359] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:28 +0300] [15359] [INFO] Listening at: http://127.0.0.1:8000 (15359)
+[2022-01-05 00:24:28 +0300] [15359] [INFO] Using worker: sync
+[2022-01-05 00:24:28 +0300] [15362] [INFO] Booting worker with pid: 15362
+[2022-01-05 00:24:28 +0300] [15362] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:28 +0300] [15362] [INFO] Worker exiting (pid: 15362)
+[2022-01-05 00:24:28 +0300] [15359] [INFO] Shutting down: Master
+[2022-01-05 00:24:28 +0300] [15359] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:24:31 +0300] [15365] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:24:31 +0300] [15365] [INFO] Listening at: http://127.0.0.1:8000 (15365)
+[2022-01-05 00:24:31 +0300] [15365] [INFO] Using worker: sync
+[2022-01-05 00:24:31 +0300] [15368] [INFO] Booting worker with pid: 15368
+[2022-01-05 00:24:31 +0300] [15368] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:24:31 +0300] [15368] [INFO] Worker exiting (pid: 15368)
+[2022-01-05 00:24:31 +0300] [15365] [INFO] Shutting down: Master
+[2022-01-05 00:24:31 +0300] [15365] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:31:34 +0300] [15518] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:31:34 +0300] [15518] [INFO] Listening at: http://127.0.0.1:8000 (15518)
+[2022-01-05 00:31:34 +0300] [15518] [INFO] Using worker: sync
+[2022-01-05 00:31:34 +0300] [15521] [INFO] Booting worker with pid: 15521
+[2022-01-05 00:31:34 +0300] [15521] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:31:34 +0300] [15521] [INFO] Worker exiting (pid: 15521)
+[2022-01-05 00:31:34 +0300] [15518] [INFO] Shutting down: Master
+[2022-01-05 00:31:34 +0300] [15518] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:31:35 +0300] [15523] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:31:35 +0300] [15523] [INFO] Listening at: http://127.0.0.1:8000 (15523)
+[2022-01-05 00:31:35 +0300] [15523] [INFO] Using worker: sync
+[2022-01-05 00:31:35 +0300] [15526] [INFO] Booting worker with pid: 15526
+[2022-01-05 00:31:35 +0300] [15526] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:31:35 +0300] [15526] [INFO] Worker exiting (pid: 15526)
+[2022-01-05 00:31:35 +0300] [15523] [INFO] Shutting down: Master
+[2022-01-05 00:31:35 +0300] [15523] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:31:37 +0300] [15527] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:31:37 +0300] [15527] [INFO] Listening at: http://127.0.0.1:8000 (15527)
+[2022-01-05 00:31:37 +0300] [15527] [INFO] Using worker: sync
+[2022-01-05 00:31:37 +0300] [15530] [INFO] Booting worker with pid: 15530
+[2022-01-05 00:31:37 +0300] [15530] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:31:37 +0300] [15530] [INFO] Worker exiting (pid: 15530)
+[2022-01-05 00:31:37 +0300] [15527] [INFO] Shutting down: Master
+[2022-01-05 00:31:37 +0300] [15527] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:31:41 +0300] [15534] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:31:41 +0300] [15534] [INFO] Listening at: http://127.0.0.1:8000 (15534)
+[2022-01-05 00:31:41 +0300] [15534] [INFO] Using worker: sync
+[2022-01-05 00:31:41 +0300] [15537] [INFO] Booting worker with pid: 15537
+[2022-01-05 00:31:41 +0300] [15537] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:31:41 +0300] [15537] [INFO] Worker exiting (pid: 15537)
+[2022-01-05 00:31:41 +0300] [15534] [INFO] Shutting down: Master
+[2022-01-05 00:31:41 +0300] [15534] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:37:03 +0300] [15765] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:37:03 +0300] [15765] [INFO] Listening at: http://127.0.0.1:8000 (15765)
+[2022-01-05 00:37:03 +0300] [15765] [INFO] Using worker: sync
+[2022-01-05 00:37:03 +0300] [15768] [INFO] Booting worker with pid: 15768
+[2022-01-05 00:37:03 +0300] [15768] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:37:03 +0300] [15768] [INFO] Worker exiting (pid: 15768)
+[2022-01-05 00:37:03 +0300] [15765] [INFO] Shutting down: Master
+[2022-01-05 00:37:03 +0300] [15765] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:37:04 +0300] [15771] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:37:04 +0300] [15771] [INFO] Listening at: http://127.0.0.1:8000 (15771)
+[2022-01-05 00:37:04 +0300] [15771] [INFO] Using worker: sync
+[2022-01-05 00:37:04 +0300] [15774] [INFO] Booting worker with pid: 15774
+[2022-01-05 00:37:04 +0300] [15774] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:37:04 +0300] [15774] [INFO] Worker exiting (pid: 15774)
+[2022-01-05 00:37:04 +0300] [15771] [INFO] Shutting down: Master
+[2022-01-05 00:37:04 +0300] [15771] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:37:07 +0300] [15775] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:37:07 +0300] [15775] [INFO] Listening at: http://127.0.0.1:8000 (15775)
+[2022-01-05 00:37:07 +0300] [15775] [INFO] Using worker: sync
+[2022-01-05 00:37:07 +0300] [15778] [INFO] Booting worker with pid: 15778
+[2022-01-05 00:37:07 +0300] [15778] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:37:07 +0300] [15778] [INFO] Worker exiting (pid: 15778)
+[2022-01-05 00:37:07 +0300] [15775] [INFO] Shutting down: Master
+[2022-01-05 00:37:07 +0300] [15775] [INFO] Reason: Worker failed to boot.
+[2022-01-05 00:37:10 +0300] [15781] [INFO] Starting gunicorn 20.1.0
+[2022-01-05 00:37:10 +0300] [15781] [INFO] Listening at: http://127.0.0.1:8000 (15781)
+[2022-01-05 00:37:10 +0300] [15781] [INFO] Using worker: sync
+[2022-01-05 00:37:10 +0300] [15784] [INFO] Booting worker with pid: 15784
+[2022-01-05 00:37:10 +0300] [15784] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/denis/venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'morse_tutor.wsgi'
+[2022-01-05 00:37:10 +0300] [15784] [INFO] Worker exiting (pid: 15784)
+[2022-01-05 00:37:10 +0300] [15781] [INFO] Shutting down: Master
+[2022-01-05 00:37:10 +0300] [15781] [INFO] Reason: Worker failed to boot.

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class='wrapper' id='wrapper'>
+    <h2 id='phrase' class="phrase"></h2>
+</div>
+<div class='containerCard'>
+    <div class='card _animated'>
+        <h2 class='subtitleCard'>Where am I?</h2>
+    </div>
+    <div class='cardText _animated'>
+        This free service is designed to teach <b style='color: #05386B'>Morse code</b>, as well as to improve skills in receiving and transmitting signals.
+        Training is suitable for people of different levels of skill, and even for those who have just decided to start.
+    </div>
+    
+    <div class='cardleft _animated'>
+        <h2 class='subtitleCard'>How to start?</h2>
+    </div>
+    <div class='cardTextleft _animated'>
+        <p>To start feeling Morse code, it is necessary to evoke associations in your head between a certain set of sounds (a sequence of dots and dashes) and the so-called "chants".
+        To do this, you should use a mnemonic memorization technique.</p>
+        <p>If you press a key <b style='color: #05386B'>~</b>, you will see a table. Let's take an example: the letter A has an encoding ·- (one short sound and then a long one). And it sounds like "ti - taaa".</p>
+        <p> To associate a letter with its sound, need to use an intermediate link - a chant. The chant for the letter A is a-GAIN. A short a, and then a long GAAAAIN.</p>
+    </div>
+
+    <div class='card _animated'>
+        <h2 class='subtitleCard'>So...</h2>
+    </div>
+    <div class='cardText _animated'>
+        Turn up the sound and press the <b style='color: #05386B'>space</b> bar. This key is used as a telegraph key. You can try to reproduce the sound of any character. Sing a chant at the same time. With time and a lot of practice, you will begin to associate morse sounds with this chant, and as a result, with the necessary symbol.
+    </div>
+
+    <div class='cardleft _animated'>
+        <h2 class='subtitleCard'>And of course</h2>
+    </div>
+    <div class='cardTextleft _animated'>
+        Go to the  <a href='{% url "training" %}' style='color: #05386B; text-decoration: none;' id='aTraining'>training</a> section. There you will be able to learn the alphabet step by step or practice receiving and transmitting at speed.
+    </div>
+
+</div>
+{% if user.is_authenticated %}
+<script>
+    userName = `{{ user.username }}`
+</script>
+{% endif %}
+<div class="footer">
+    Do you have any questions or suggestions?<a href='https://t.me/Lopatk1n' style='text-decoration: none;color: #EDF5E1;'> Text me <i class="fab fa-telegram-plane"></i> @Lopatk1n </a>
+</div>
+<script src="{% static 'js/morseSound.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'js/animation.js' %}"></script>
+{% endblock %}

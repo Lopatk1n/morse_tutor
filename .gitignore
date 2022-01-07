@@ -1,0 +1,6 @@
+morse_tutor/morse_tutor/prod_settings.py
+morse_tutor/morse_tutor/secret_config.py
+morse_tutor/logs
+morse_tutor/db.json
+morse_tutor/debug.logs
+morse_tutor/db.sqlite3

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <article class="kontext">
+        <div class="layer one show">
+            <span class="spann">
+                <i class="fas fa-graduation-cap"></i>
+            </span>
+            <h2>Learn the alphabet</h2>
+            <div class='p_layer'>
+                The first stage. You will start learning from simple symbols to more complex ones. The main purpose of these lessons is to memorize the sound of the code and develop the primary recognition skill. The optimal speed for beginners is about 8-12 WPM. I recommend you do not proceed to the next stages until you are firmly convinced that you have mastered the previous well. Otherwise, you will have a mess in your head and it will seem too difficult to keep everything in mind.
+            </div>
+            <a href="{% url 'alphabet_lesson' %}" class="btn">Start</a>
+        </div>
+        <div class="layer two">
+            <span class="spann">
+                <i class="fas fa-headphones-alt"></i>
+            </span>
+            <h2>Receive the code</h2>
+            <div class='p_layer'>
+                This training is designed to consolidate your skills. Receiving groups of characters is much more difficult because you don't have time to think. This is where your trained neural connections come into play. If you are a beginner, try to start receiving code at a speed of 6 WPM in groups of 4 characters. If you can type fast, try using a keyboard. However, at high speeds you will not be able do it without a sheet and a pen.
+            </div>
+            <a href="{% url 'receiving' %}" class="btn">Start</a>
+        </div>
+        <div class="layer three">
+            <span  class="spann">
+                <i class="fas fa-keyboard"></i>
+            </span>
+            <h2>Transmit the code</h2>
+            <div class='p_layer'>
+                In this training, you can master the skill of code transmission. (It is assumed that you already know the whole alphabet). After choosing the appropriate speed and the permissible error, transmit the characters that you see on the screen. In case of incorrect input, you will see your timing errors.
+            </div>
+            <a href="{% url 'transmiting' %}" class="btn">Start</a>
+
+
+        </div>
+    </article>
+    
+    <ul class="bullets"></ul>
+<script src="{% static 'js/sliders.js' %}"></script>
+<script src="{% static 'js/morseSound.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class='lessonWrapper' id='lessonWrapper'>
+        <div class='letter' id='letter'>
+
+        </div>
+        <div class="chant" id='chant'>
+
+        </div>
+        <div class="code" id='code'>
+            
+        </div>
+    </div>
+    <div class='onLessonInfo' id='onLessonInfo'>
+        
+    </div>
+    <div class='chooseLesson' id='chooseLesson'>
+        <div class='lessonCell activeCell' id='lessonCell1'>1</div>
+        <div class='lessonCell' id='lessonCell2'>2</div>
+        <div class='lessonCell' id='lessonCell3'>3</div>
+        <div class='lessonCell' id='lessonCell4'>4</div>
+        <div class='lessonCell' id='lessonCell5'>5</div>
+        <div class='lessonCell' id='lessonCell6'>6</div>
+        <div class='lessonCell' id='lessonCell7'>7</div>
+        <div class='lessonCell' id='lessonCell8'>8</div>
+        <div class='lessonCell' id='lessonCell9'>9</div>
+    </div>
+    <div class='lessonDescription' id='lessonDescription'>
+
+    </div>
+    <div class='lessonResultWrapper' id='lessonResultWrapper'>
+        <div class='lessonResult' id='lessonResult'>
+            <div class='lessonTitle' id='lessonTitle'>
+                Lesson #4
+            </div>
+            <div class='yourResults' id='yourResults'>
+                Perfect
+            </div>
+            <div class='mistakesMade' id='mistakesMade'>
+                Mistakes made: 0
+            </div>
+            <div class='lessonButtons'>
+                <a class="btn" id='tryAgain'>Try Again</a>
+                <a class="btn" id='Next'>Next</a>
+            </div>
+
+        </div>
+        <div class='exitBtn'>
+        <a href="{% url 'training' %}">
+            <span>
+                <i class="fas fa-times-circle"></i>
+            </span>
+        </a>
+    </div>
+    </div>
+    <div class='pressEnter' id='pressEnter'>
+        <h1 id='blink1'>Choose the lesson and press 'Enter' to begin</h1>
+        
+    </div>
+<script src="{% static 'js/alphabet_lesson.js' %}"></script>
+{% endblock %}

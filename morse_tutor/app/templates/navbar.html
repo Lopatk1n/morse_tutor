@@ -1,0 +1,78 @@
+{% load static %}
+<header id='header'>
+
+    <div class="navbar">
+        <div class='tutorImage' id='tutorImage'>
+            <image src="{% static 'images/Morse_Tutor.png' %}" height='50px'></image>
+        </div>
+        <div class="navbarElement" id='home'>
+            <a href="{% url 'welcoming' %}" class='anchor'>
+                <span>
+                    <i class="fas fa-home"></i>
+                </span>
+                <span class="navbarElementSpan">Home</span>
+            </a>
+        </div>
+        <div class="navbarElement" id='training'>
+            <a href="{% url 'training' %}" class='anchor'>
+                <span>
+                    <i class="fas fa-play"></i>
+                </span>
+                <span class="navbarElementSpan">Training</span>
+            </a>
+        </div>
+        <div class="navbarElement" style = 'position: relative;'>
+            <a class='anchor'>
+                <span>
+                    <i class="fas fa-comments"></i>
+                </span>
+                <span class="navbarElementSpan">Community</span>
+            </a>
+            <div class="comingSoon">Coming soon</div>
+        </div>
+        {% if not user.is_authenticated %}
+        <div class="navbarElement" id='login'>
+            <a class='anchor'>
+                <span>
+                    <i class="fas fa-key"></i>
+                </span>
+                <span class="navbarElementSpan">Log In</span>
+            </a>
+        </div>
+        {% endif %}
+        {% if user.is_authenticated %}
+        <div class="navbarElement" id='logout'>
+            <a class='anchor' href="{% url 'logout' %}">
+                <span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </span>
+                <span class="navbarElementSpan">Log Out</span>
+            </a>
+        </div>
+        {% endif %}
+        <div class="cog" id='cog'>
+            <a>
+                <span>
+                    <i class="fas fa-cog"></i>
+                </span>
+            </a>
+        </div>
+        <div class='settingMenu' id='settingMenu'>
+            <p>Pitch, Hz</p>
+            <div class="range-input">
+                <input type="range" min="300" max="2000" value="300" step="10" id='pitchRange'>
+                <div class="value" id='pitchRangeValue'>
+                    <div></div>
+                </div>
+            </div>
+            <p>Speed (WPM)</p>
+            <div class="range-input">
+                <input type="range" min="5" max="60" value="5" step="1" id='speedRange'>
+                <div class="value" id='speedRangeValue'>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script src="{% static 'js/inputRange.js' %}"></script>

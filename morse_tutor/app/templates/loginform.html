@@ -1,0 +1,78 @@
+{% load static %}
+<div id='loginform' class='loginform'>
+    <div id='loginformInner' class="loginformInner">
+        <div class='loginTitle'>Log In</div>
+        <div class="signWrap">
+            <div class='signInput'>
+                <div class='signRow'>
+                    <span>
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" placeholder="username" id='usernameL'>
+                </div>
+
+            </div>
+            <div class='signInput'>
+                <div class='signRow'>
+                    <span>
+                        <i class="fas fa-key"></i>
+                    </span>
+                    <input type="password" placeholder="password" id='passwordL'>
+                </div>
+
+            </div>
+            <button id='signInBtn' class='signbtn'>Enter</button>
+            <div class="dontHave" id="dontHave">
+                Don't have an account yet?
+            </div>
+        </div>
+        <div class="also">
+            
+        <a href="{% url "social:begin" "github" %}">
+            <p>Log in with GitHub</p>
+            <span>
+                <i class="fab fa-github" ></i>
+            </span>
+        </a>
+        </div>
+    </div>
+    <div class="signinformInner" id="signinformInner">
+        <div class='loginTitle'>Sign Up</div>
+        <div class="signWrap">
+            <div class='signInput'>
+                <div class='signRow'>
+                    <span>
+                        <i class="fas fa-at"></i>
+                    </span>
+                    <input type="text" placeholder="email" id='emailS'>
+                </div>
+
+            </div>
+            <div class='signInput'>
+                <div class='signRow'>
+                    <span>
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" placeholder="username" id='usernameS'>
+                </div>
+
+            </div>
+            <div class='signInput'>
+                <div class='signRow'>
+                    <span>
+                        <i class="fas fa-key"></i>
+                    </span>
+                    <input type="password" placeholder="password" id='passwordS'>
+                </div>
+
+            </div>
+            <button id='signUpBtn' class='signbtn'>Enter</button>
+            <div class="dontHave" id="IHave">
+                I have an account
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    <script src="{% static 'js/loginform.js' %}"></script>
